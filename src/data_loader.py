@@ -57,7 +57,10 @@ def fetch_pair_data(pair: str, period_days: int = 730, interval: str = "1h",
     # For hourly data, yfinance allows max 730 days but fetches
     # in 60-day chunks internally
     end_date = datetime.utcnow()
-    start_date = end_date - timedelta(days=period_days)
+    # Yahoo Finance enforces a strict 730-day limit for hourly data.
+    # Cap at 729 days to avoid boundary errors from clock skew.
+    capped_days = min(period_days, 729)
+    start_date = end_date - timedelta(days=capped_days)
 
     try:
         tk = yf.Ticker(ticker)
