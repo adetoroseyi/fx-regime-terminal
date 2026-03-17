@@ -11,8 +11,19 @@
 
   <!-- Header -->
   <header class="header">
-    <h1><span>FX</span> Regime Terminal</h1>
-    <div class="header-meta" id="last-updated">Loading...</div>
+    <div class="header-left">
+      <h1><span>FX</span> Regime Terminal</h1>
+      <div class="connection-status" id="conn-status">
+        <span class="status-dot offline"></span>
+        <span class="status-text">Connecting...</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="header-meta" id="last-updated">Loading...</div>
+      <div class="refresh-indicator" id="refresh-indicator">
+        <span class="refresh-countdown" id="refresh-countdown"></span>
+      </div>
+    </div>
   </header>
 
   <!-- Loading -->
@@ -23,13 +34,24 @@
 
   <div class="container">
 
+    <!-- Live Price Ticker -->
+    <div class="price-ticker" id="price-ticker">
+      <!-- Populated by JS -->
+    </div>
+
     <!-- Live Signal Panel -->
     <h2 class="section-title">Live Signal Panel</h2>
     <div class="grid grid-4" id="signal-cards">
       <!-- Populated by JS -->
     </div>
 
-    <!-- Regime Chart + Equity Curve -->
+    <!-- Model Quality Panel -->
+    <h2 class="section-title">Model Quality</h2>
+    <div class="grid grid-4" id="model-cards">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Charts Section -->
     <h2 class="section-title">Charts</h2>
     <div id="pair-tabs" class="pair-tabs"></div>
 
@@ -53,6 +75,26 @@
       </div>
     </div>
 
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">BIC by N-States (Model Selection)</span>
+        </div>
+        <div class="chart-container">
+          <canvas id="bic-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Regime Confidence Over Time</span>
+        </div>
+        <div class="chart-container">
+          <canvas id="confidence-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
     <!-- Backtest Results Table -->
     <h2 class="section-title">Backtest Results</h2>
     <div class="card">
@@ -63,15 +105,28 @@
               <th onclick="sortTable('backtest-table', 0)">Pair</th>
               <th onclick="sortTable('backtest-table', 1)">Strategy</th>
               <th onclick="sortTable('backtest-table', 2)">Return %</th>
-              <th onclick="sortTable('backtest-table', 3)">Sharpe</th>
-              <th onclick="sortTable('backtest-table', 4)">Max DD %</th>
-              <th onclick="sortTable('backtest-table', 5)">Win Rate</th>
-              <th onclick="sortTable('backtest-table', 6)">Trades</th>
+              <th onclick="sortTable('backtest-table', 3)">Alpha %</th>
+              <th onclick="sortTable('backtest-table', 4)">Sharpe</th>
+              <th onclick="sortTable('backtest-table', 5)">Max DD %</th>
+              <th onclick="sortTable('backtest-table', 6)">Win Rate</th>
+              <th onclick="sortTable('backtest-table', 7)">Trades</th>
+              <th onclick="sortTable('backtest-table', 8)">Avg Duration</th>
             </tr>
           </thead>
           <tbody id="backtest-tbody">
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <!-- Forward Test Log -->
+    <h2 class="section-title">Forward Test Log</h2>
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Signal History (Last 30 Days)</span>
+      </div>
+      <div class="chart-container tall">
+        <canvas id="forward-chart"></canvas>
       </div>
     </div>
 
@@ -90,6 +145,7 @@
               <th>PnL %</th>
               <th>Exit Reason</th>
               <th>Duration</th>
+              <th>Regime</th>
             </tr>
           </thead>
           <tbody id="trade-tbody">
@@ -98,9 +154,31 @@
       </div>
     </div>
 
+    <!-- Retrain History -->
+    <h2 class="section-title">Retrain History</h2>
+    <div class="card">
+      <div class="table-wrapper">
+        <table id="retrain-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Pair</th>
+              <th>N-States</th>
+              <th>Score</th>
+              <th>BIC</th>
+              <th>Converged</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="retrain-tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <!-- Disclaimer -->
     <div class="disclaimer">
-      ⚠️ <strong>Disclaimer:</strong> FX Regime Terminal is a signal research tool for educational purposes only.
+      <strong>Disclaimer:</strong> FX Regime Terminal is a signal research tool for educational purposes only.
       This is not financial advice. No trades are placed automatically. Past performance does not guarantee future results.
       Trade at your own risk.
     </div>

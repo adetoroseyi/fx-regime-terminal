@@ -1,10 +1,11 @@
 /**
  * FX Regime Terminal — Chart.js Visualisations
  *
- * Provides chart rendering for:
- * - Regime price overlay charts
- * - Equity curve
+ * Charts:
+ * - Equity curve with regime overlay
  * - Regime distribution doughnut
+ * - BIC model selection bar chart
+ * - Forward test confidence timeline
  */
 
 // Regime colour mapping
@@ -33,6 +34,34 @@ const DOUGHNUT_COLORS = [
   '#58a6ff', '#d29922', '#6e7681'
 ];
 
+// Common chart options
+const COMMON_OPTS = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    tooltip: {
+      backgroundColor: '#1c2128',
+      titleColor: '#e6edf3',
+      bodyColor: '#8b949e',
+      borderColor: '#30363d',
+      borderWidth: 1,
+    },
+    legend: {
+      labels: { color: '#8b949e', font: { size: 11 } }
+    }
+  },
+  scales: {
+    x: {
+      ticks: { color: '#484f58', maxTicksLimit: 12, font: { size: 10 } },
+      grid: { color: 'rgba(48, 54, 61, 0.5)' },
+    },
+    y: {
+      ticks: { color: '#484f58', font: { size: 10 } },
+      grid: { color: 'rgba(48, 54, 61, 0.5)' },
+    }
+  }
+};
+
 // Store chart instances for cleanup
 const chartInstances = {};
 
@@ -44,9 +73,24 @@ function destroyChart(id) {
 }
 
 /**
- * Render a price chart with regime colour background overlay.
+ * Render empty chart placeholder.
  */
-function renderRegimeChart(canvasId, equityCurve, title) {
+function renderEmptyChart(canvasId, message) {
+  destroyChart(canvasId);
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = '#484f58';
+  ctx.font = '14px -apple-system, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(message, canvas.width / 2, canvas.height / 2);
+}
+
+/**
+ * Render equity curve with regime color overlay.
+ */
+function renderEquityCurve(canvasId, equityCurve) {
   destroyChart(canvasId);
 
   const canvas = document.getElementById(canvasId);
@@ -58,18 +102,13 @@ function renderRegimeChart(canvasId, equityCurve, title) {
   });
   const values = equityCurve.map(d => d.equity);
 
-  // Create regime background segments
-  const backgroundColors = equityCurve.map(d =>
-    REGIME_COLORS[d.regime] || 'rgba(110, 118, 129, 0.1)'
-  );
-
   const ctx = canvas.getContext('2d');
   chartInstances[canvasId] = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: labels,
+      labels,
       datasets: [{
-        label: title || 'Equity',
+        label: 'Portfolio Equity',
         data: values,
         borderColor: '#58a6ff',
         backgroundColor: 'rgba(88, 166, 255, 0.05)',
@@ -80,48 +119,26 @@ function renderRegimeChart(canvasId, equityCurve, title) {
       }]
     },
     options: {
-      responsive: true,
-      maintainAspectRatio: false,
+      ...COMMON_OPTS,
       interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: {
-          display: true,
-          labels: { color: '#8b949e', font: { size: 11 } }
-        },
+        ...COMMON_OPTS.plugins,
         tooltip: {
-          backgroundColor: '#1c2128',
-          titleColor: '#e6edf3',
-          bodyColor: '#8b949e',
-          borderColor: '#30363d',
-          borderWidth: 1,
+          ...COMMON_OPTS.plugins.tooltip,
           callbacks: {
-            afterBody: function(items) {
+            afterBody(items) {
               const idx = items[0].dataIndex;
               const regime = equityCurve[idx].regime;
               return `Regime: ${regime}`;
+            },
+            label(item) {
+              return `Equity: $${item.raw.toFixed(2)}`;
             }
           }
-        }
-      },
-      scales: {
-        x: {
-          ticks: { color: '#484f58', maxTicksLimit: 12, font: { size: 10 } },
-          grid: { color: 'rgba(48, 54, 61, 0.5)' },
-        },
-        y: {
-          ticks: { color: '#484f58', font: { size: 10 } },
-          grid: { color: 'rgba(48, 54, 61, 0.5)' },
         }
       }
     }
   });
-}
-
-/**
- * Render equity curve line chart.
- */
-function renderEquityCurve(canvasId, equityCurve) {
-  renderRegimeChart(canvasId, equityCurve, 'Portfolio Equity');
 }
 
 /**
@@ -145,7 +162,7 @@ function renderRegimeDistribution(canvasId, regimeDistribution) {
   chartInstances[canvasId] = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: labels,
+      labels,
       datasets: [{
         data: values,
         backgroundColor: colors.map(c => c + '33'),
@@ -163,7 +180,7 @@ function renderRegimeDistribution(canvasId, regimeDistribution) {
             color: '#8b949e',
             font: { size: 11 },
             padding: 12,
-            generateLabels: function(chart) {
+            generateLabels(chart) {
               const data = chart.data;
               return data.labels.map((label, i) => {
                 const value = data.datasets[0].data[i];
@@ -180,15 +197,11 @@ function renderRegimeDistribution(canvasId, regimeDistribution) {
           }
         },
         tooltip: {
-          backgroundColor: '#1c2128',
-          titleColor: '#e6edf3',
-          bodyColor: '#8b949e',
-          borderColor: '#30363d',
-          borderWidth: 1,
+          ...COMMON_OPTS.plugins.tooltip,
           callbacks: {
-            label: function(item) {
+            label(item) {
               const pct = ((item.raw / total) * 100).toFixed(1);
-              return ` ${item.label}: ${item.raw} candles (${pct}%)`;
+              return ` ${item.label}: ${item.raw.toLocaleString()} candles (${pct}%)`;
             }
           }
         }
@@ -198,50 +211,132 @@ function renderRegimeDistribution(canvasId, regimeDistribution) {
 }
 
 /**
- * Render a simple bar chart for backtest comparison.
+ * Render BIC bar chart for model selection.
  */
-function renderBacktestComparison(canvasId, backtestData) {
+function renderBICBarChart(canvasId, nStates, bics, bestN) {
   destroyChart(canvasId);
 
   const canvas = document.getElementById(canvasId);
-  if (!canvas || !backtestData || backtestData.length === 0) return;
+  if (!canvas) return;
 
-  const labels = backtestData.map(d => `${d.pair} (${d.strategy})`);
-  const returns = backtestData.map(d => d.total_return_pct);
-  const colors = returns.map(v => v >= 0 ? 'rgba(63, 185, 80, 0.7)' : 'rgba(248, 81, 73, 0.7)');
+  const colors = nStates.map(n =>
+    n === bestN ? 'rgba(63, 185, 80, 0.7)' : 'rgba(88, 166, 255, 0.4)'
+  );
+  const borders = nStates.map(n =>
+    n === bestN ? '#3fb950' : '#58a6ff'
+  );
 
   const ctx = canvas.getContext('2d');
   chartInstances[canvasId] = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: labels,
+      labels: nStates.map(n => `${n} states`),
       datasets: [{
-        label: 'Total Return %',
-        data: returns,
+        label: 'BIC',
+        data: bics,
         backgroundColor: colors,
-        borderColor: colors.map(c => c.replace('0.7', '1')),
-        borderWidth: 1,
+        borderColor: borders,
+        borderWidth: 2,
       }]
     },
     options: {
-      responsive: true,
-      maintainAspectRatio: false,
+      ...COMMON_OPTS,
       plugins: {
+        ...COMMON_OPTS.plugins,
         legend: { display: false },
         tooltip: {
-          backgroundColor: '#1c2128',
-          titleColor: '#e6edf3',
-          bodyColor: '#8b949e',
+          ...COMMON_OPTS.plugins.tooltip,
+          callbacks: {
+            afterLabel(item) {
+              const n = nStates[item.dataIndex];
+              return n === bestN ? '← Selected (lowest BIC)' : '';
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+/**
+ * Render forward test confidence timeline.
+ */
+function renderConfidenceTimeline(canvasId, pairData) {
+  destroyChart(canvasId);
+
+  const canvas = document.getElementById(canvasId);
+  if (!canvas || !pairData || pairData.length === 0) return;
+
+  const labels = pairData.map(d => {
+    const dt = new Date(d.timestamp);
+    return dt.toLocaleDateString('en-GB', { month: 'short', day: 'numeric' });
+  });
+
+  const confidences = pairData.map(d => d.confidence);
+  const bgColors = pairData.map(d => {
+    const regime = d.regime;
+    return REGIME_COLORS[regime] || 'rgba(110, 118, 129, 0.25)';
+  });
+
+  // Signal markers
+  const signalPoints = pairData.map(d => {
+    if (d.signal === 'LONG' || d.signal === 'SHORT') return d.confidence;
+    return null;
+  });
+
+  const ctx = canvas.getContext('2d');
+  chartInstances[canvasId] = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Regime Confidence %',
+          data: confidences,
+          borderColor: '#58a6ff',
+          backgroundColor: 'rgba(88, 166, 255, 0.1)',
+          borderWidth: 2,
+          pointRadius: 2,
+          fill: true,
+          tension: 0.3,
+        },
+        {
+          label: 'Signals Fired',
+          data: signalPoints,
+          borderColor: 'transparent',
+          backgroundColor: '#3fb950',
+          pointRadius: 6,
+          pointStyle: 'triangle',
+          showLine: false,
+        }
+      ]
+    },
+    options: {
+      ...COMMON_OPTS,
+      interaction: { mode: 'index', intersect: false },
+      scales: {
+        ...COMMON_OPTS.scales,
+        y: {
+          ...COMMON_OPTS.scales.y,
+          min: 0,
+          max: 100,
+          ticks: {
+            ...COMMON_OPTS.scales.y.ticks,
+            callback: v => v + '%',
+          }
         }
       },
-      scales: {
-        x: {
-          ticks: { color: '#484f58', font: { size: 10 } },
-          grid: { color: 'rgba(48, 54, 61, 0.5)' },
-        },
-        y: {
-          ticks: { color: '#484f58', font: { size: 10 } },
-          grid: { color: 'rgba(48, 54, 61, 0.5)' },
+      plugins: {
+        ...COMMON_OPTS.plugins,
+        tooltip: {
+          ...COMMON_OPTS.plugins.tooltip,
+          callbacks: {
+            afterBody(items) {
+              const idx = items[0].dataIndex;
+              const d = pairData[idx];
+              return `Regime: ${d.regime}\nSignal: ${d.signal}`;
+            }
+          }
         }
       }
     }

@@ -8,6 +8,7 @@ from src.features import compute_features, get_feature_matrix
 from src.hmm_model import (
     train_hmm, decode_regime, _apply_confirmation_lag,
     save_model, load_model, get_regime_transition_matrix,
+    select_best_n_states,
     N_REGIMES, REGIME_LABELS,
 )
 
@@ -74,6 +75,9 @@ class TestHMMModel:
         assert "posteriors" in trained_model
         assert "regime_map" in trained_model
         assert "score" in trained_model
+        assert "bic" in trained_model
+        assert "aic" in trained_model
+        assert "n_free_params" in trained_model
 
     def test_n_states(self, trained_model):
         assert trained_model["model"].n_components == N_REGIMES
@@ -150,6 +154,75 @@ class TestConfirmationLag:
         assert confirmed[4]
 
 
+class TestVariableStates:
+    """Tests for variable n_states (non-default regime counts)."""
+
+    def test_train_with_fewer_states(self):
+        df = make_synthetic_ohlcv(500)
+        result = train_hmm(df, n_states=4)
+        assert result["model"].n_components == 4
+        assert len(result["regime_map"]) == 4
+        assert len(result["states"]) == len(result["features"])
+
+    def test_train_with_more_states(self):
+        df = make_synthetic_ohlcv(500)
+        result = train_hmm(df, n_states=9)
+        assert result["model"].n_components == 9
+        assert len(result["regime_map"]) == 9
+        # Extra states beyond 7 should all be labeled Noise
+        noise_count = sum(1 for v in result["regime_map"].values()
+                          if v == "Noise")
+        assert noise_count >= 3  # at least 9 - 6 = 3 Noise states
+
+    def test_all_labels_from_known_set(self):
+        """With any n_states, all labels must come from REGIME_LABELS."""
+        known = set(REGIME_LABELS.values())
+        df = make_synthetic_ohlcv(500)
+        for n in [3, 5, 7, 9]:
+            result = train_hmm(df, n_states=n)
+            for label in result["regime_map"].values():
+                assert label in known, f"n={n}: unknown label '{label}'"
+
+    def test_bic_decreases_then_increases(self):
+        """BIC should not monotonically decrease — it penalizes complexity."""
+        df = make_synthetic_ohlcv(1000, seed=123)
+        bics = []
+        for n in range(3, 9):
+            result = train_hmm(df, n_states=n)
+            bics.append(result["bic"])
+        # Not all differences should be negative (i.e. BIC shouldn't
+        # always decrease). If it does, the penalty isn't working.
+        diffs = [bics[i+1] - bics[i] for i in range(len(bics) - 1)]
+        assert not all(d < 0 for d in diffs), (
+            f"BIC monotonically decreased, penalty may be broken: {bics}"
+        )
+
+
+class TestSelectBestNStates:
+    def test_returns_best_n(self):
+        df = make_synthetic_ohlcv(500)
+        result = select_best_n_states(df, state_range=range(3, 6))
+        assert "best_n" in result
+        assert result["best_n"] in range(3, 6)
+        assert "best_result" in result
+        assert result["best_result"]["model"].n_components == result["best_n"]
+
+    def test_sweep_has_all_states(self):
+        df = make_synthetic_ohlcv(500)
+        result = select_best_n_states(df, state_range=range(3, 6))
+        sweep_ns = {s["n_states"] for s in result["sweep"]}
+        assert sweep_ns == {3, 4, 5}
+
+    def test_best_has_lowest_bic(self):
+        df = make_synthetic_ohlcv(500)
+        result = select_best_n_states(df, state_range=range(3, 6),
+                                      criterion="bic")
+        valid_bics = {s["n_states"]: s["bic"]
+                      for s in result["sweep"] if s["score"] is not None}
+        best_bic = valid_bics[result["best_n"]]
+        assert best_bic == min(valid_bics.values())
+
+
 class TestSaveLoad:
     def test_save_and_load(self, tmp_path):
         df = make_synthetic_ohlcv(300)
@@ -159,3 +232,13 @@ class TestSaveLoad:
         model, regime_map = load_model("TEST", directory=str(tmp_path))
         assert model.n_components == N_REGIMES
         assert len(regime_map) == N_REGIMES
+
+    def test_save_and_load_variable_states(self, tmp_path):
+        """Model saved with non-default n_states loads correctly."""
+        df = make_synthetic_ohlcv(300)
+        result = train_hmm(df, n_states=4)
+        save_model(result, "TEST4", directory=str(tmp_path))
+
+        model, regime_map = load_model("TEST4", directory=str(tmp_path))
+        assert model.n_components == 4
+        assert len(regime_map) == 4
