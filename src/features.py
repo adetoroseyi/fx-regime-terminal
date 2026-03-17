@@ -42,7 +42,8 @@ def compute_features(df: pd.DataFrame) -> pd.DataFrame:
         volume = volume.replace(0, np.nan).ffill().bfill()
         features["volume_change"] = volume.pct_change()
 
-    # Drop first row (NaN from diff/shift) and any remaining NaN rows
+    # Replace inf/-inf with NaN, then drop all NaN rows
+    features.replace([np.inf, -np.inf], np.nan, inplace=True)
     features.dropna(inplace=True)
 
     # Clip extreme outliers (beyond 5 std) to stabilise HMM training
