@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FX Regime Terminal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1><span>FX</span> Regime Terminal</h1>
+    <div class="header-meta" id="last-updated">Loading...</div>
+  </header>
+
+  <!-- Loading -->
+  <div id="loading" class="loading">
+    <div class="loading-spinner"></div>
+    <p>Loading signal data...</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Live Signal Panel -->
+    <h2 class="section-title">Live Signal Panel</h2>
+    <div class="grid grid-4" id="signal-cards">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Regime Chart + Equity Curve -->
+    <h2 class="section-title">Charts</h2>
+    <div id="pair-tabs" class="pair-tabs"></div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Equity Curve</span>
+        </div>
+        <div class="chart-container tall">
+          <canvas id="equity-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Regime Distribution</span>
+        </div>
+        <div class="chart-container tall">
+          <canvas id="regime-dist-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backtest Results Table -->
+    <h2 class="section-title">Backtest Results</h2>
+    <div class="card">
+      <div class="table-wrapper">
+        <table id="backtest-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable('backtest-table', 0)">Pair</th>
+              <th onclick="sortTable('backtest-table', 1)">Strategy</th>
+              <th onclick="sortTable('backtest-table', 2)">Return %</th>
+              <th onclick="sortTable('backtest-table', 3)">Sharpe</th>
+              <th onclick="sortTable('backtest-table', 4)">Max DD %</th>
+              <th onclick="sortTable('backtest-table', 5)">Win Rate</th>
+              <th onclick="sortTable('backtest-table', 6)">Trades</th>
+            </tr>
+          </thead>
+          <tbody id="backtest-tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Trade Log -->
+    <h2 class="section-title">Trade Log</h2>
+    <div class="card">
+      <div class="table-wrapper">
+        <table id="trade-table">
+          <thead>
+            <tr>
+              <th>Pair</th>
+              <th>Strategy</th>
+              <th>Direction</th>
+              <th>Entry</th>
+              <th>Exit</th>
+              <th>PnL %</th>
+              <th>Exit Reason</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody id="trade-tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      ⚠️ <strong>Disclaimer:</strong> FX Regime Terminal is a signal research tool for educational purposes only.
+      This is not financial advice. No trades are placed automatically. Past performance does not guarantee future results.
+      Trade at your own risk.
+    </div>
+
+  </div>
+
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+name: FX Regime Terminal — Daily Run
+
+on:
+  schedule:
+    # Run daily at 00:05 UTC
+    - cron: '5 0 * * *'
+  workflow_dispatch:  # Allow manual triggers
+
+permissions:
+  contents: write
+
+jobs:
+  daily-retrain-and-signal:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Retrain HMM models
+        run: python -m src.retrain
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Run signal engine
+        run: python -m src.signal_engine
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Send Telegram notifications
+        run: python -m src.telegram_notifier
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Commit updated state and logs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/ logs/ -f
+          git diff --cached --quiet || git commit -m "chore: update signals and logs [skip ci]"
+          git push
+
+      - name: Upload results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backtest-results-${{ github.run_number }}
+          path: results/
+          retention-days: 30
+          if-no-files-found: ignore

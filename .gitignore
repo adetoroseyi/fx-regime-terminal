@@ -1,0 +1,35 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Models (large binary files)
+models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs (keep structure, ignore content)
+logs/*.csv
+!logs/.gitkeep
+
+# Node
+node_modules/
