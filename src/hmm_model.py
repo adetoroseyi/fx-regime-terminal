@@ -98,13 +98,22 @@ def train_hmm(df: pd.DataFrame, n_states: int = N_REGIMES,
             # Auto-label regimes based on cluster characteristics
             regime_map = _auto_label_regimes(model, features, states)
 
+            log_likelihood = model.score(X)
+            n_samples = X.shape[0]
+            n_free_params = _count_free_params(model)
+            bic = -2 * log_likelihood * n_samples + n_free_params * np.log(n_samples)
+            aic = -2 * log_likelihood * n_samples + 2 * n_free_params
+
             return {
                 "model": model,
                 "features": features,
                 "states": states,
                 "posteriors": posteriors,
                 "regime_map": regime_map,
-                "score": model.score(X),
+                "score": log_likelihood,
+                "bic": bic,
+                "aic": aic,
+                "n_free_params": n_free_params,
             }
         except ValueError as e:
             if "positive-definite" in str(e):
@@ -115,6 +124,101 @@ def train_hmm(df: pd.DataFrame, n_states: int = N_REGIMES,
     raise ValueError(
         f"HMM training failed after all attempts: {last_error}"
     )
+
+
+def _count_free_params(model: GaussianHMM) -> int:
+    """
+    Count the number of free parameters in a fitted GaussianHMM.
+
+    This is needed for BIC/AIC computation.
+    """
+    n = model.n_components
+    n_features = model.means_.shape[1]
+
+    # Transition matrix: each row sums to 1, so (n-1) free per row
+    n_transition = n * (n - 1)
+
+    # Start probabilities: n-1 free
+    n_start = n - 1
+
+    # Means: n_states * n_features
+    n_means = n * n_features
+
+    # Covariances depend on type
+    if model.covariance_type == "full":
+        # Each state: symmetric matrix with n_features*(n_features+1)/2 free params
+        n_cov = n * n_features * (n_features + 1) // 2
+    elif model.covariance_type == "diag":
+        n_cov = n * n_features
+    elif model.covariance_type == "spherical":
+        n_cov = n
+    elif model.covariance_type == "tied":
+        n_cov = n_features * (n_features + 1) // 2
+    else:
+        n_cov = n * n_features  # fallback
+
+    return n_transition + n_start + n_means + n_cov
+
+
+def select_best_n_states(df: pd.DataFrame, state_range: range = None,
+                         n_iter: int = 200, random_state: int = 42,
+                         criterion: str = "bic") -> dict:
+    """
+    Sweep over different n_states values and select the best model
+    using BIC or AIC.
+
+    Args:
+        df: OHLCV DataFrame
+        state_range: Range of n_states to try (default: 3-10)
+        n_iter: Max EM iterations per model
+        random_state: Random seed
+        criterion: 'bic' or 'aic' (lower is better)
+
+    Returns:
+        dict with keys:
+            best_n: optimal number of states
+            best_result: full train_hmm result dict for best model
+            sweep: list of {n_states, score, bic, aic, converged} dicts
+    """
+    if state_range is None:
+        state_range = range(3, 11)
+
+    sweep = []
+
+    for n_states in state_range:
+        try:
+            result = train_hmm(df, n_states=n_states, n_iter=n_iter,
+                               random_state=random_state)
+            sweep.append({
+                "n_states": n_states,
+                "score": result["score"],
+                "bic": result["bic"],
+                "aic": result["aic"],
+                "converged": result["model"].monitor_.converged,
+                "result": result,
+            })
+        except Exception as e:
+            sweep.append({
+                "n_states": n_states,
+                "score": None,
+                "bic": float("inf"),
+                "aic": float("inf"),
+                "converged": False,
+                "error": str(e),
+            })
+
+    # Select best by criterion
+    valid = [s for s in sweep if s["score"] is not None]
+    if not valid:
+        raise ValueError("All model fits failed during sweep")
+
+    best = min(valid, key=lambda s: s[criterion])
+
+    return {
+        "best_n": best["n_states"],
+        "best_result": best["result"],
+        "sweep": [{k: v for k, v in s.items() if k != "result"} for s in sweep],
+    }
 
 
 def _auto_label_regimes(model: GaussianHMM, features: pd.DataFrame,
@@ -293,6 +397,8 @@ def save_model(result: dict, pair: str, directory: str = None):
         "pair": pair,
         "n_states": result["model"].n_components,
         "score": float(result["score"]),
+        "bic": float(result["bic"]),
+        "aic": float(result["aic"]),
         "regime_map": {str(k): v for k, v in result["regime_map"].items()},
         "n_samples": len(result["features"]),
     }
@@ -338,6 +444,7 @@ if __name__ == "__main__":
     result = train_hmm(df)
 
     print(f"Model score (log-likelihood): {result['score']:.2f}")
+    print(f"BIC: {result['bic']:.2f}  AIC: {result['aic']:.2f}")
     print(f"\nRegime mapping:")
     for state, label in sorted(result["regime_map"].items()):
         count = (result["states"] == state).sum()

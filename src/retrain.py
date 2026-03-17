@@ -47,6 +47,8 @@ def retrain_all(period_days: int = 730) -> list:
             # Train HMM
             model_result = train_hmm(df, n_states=N_REGIMES)
             result["score"] = round(model_result["score"], 2)
+            result["bic"] = round(model_result["bic"], 2)
+            result["aic"] = round(model_result["aic"], 2)
             result["converged"] = model_result["model"].monitor_.converged
             result["n_iter"] = model_result["model"].monitor_.n_iter
 
@@ -62,6 +64,7 @@ def retrain_all(period_days: int = 730) -> list:
             result["status"] = "OK"
 
             print(f"  Score: {result['score']}")
+            print(f"  BIC: {result['bic']}  AIC: {result['aic']}")
             print(f"  Converged: {result['converged']} ({result['n_iter']} iterations)")
             print(f"  Regimes: {regime_counts}")
             print(f"  Model saved ✓")
@@ -93,8 +96,8 @@ def _log_results(results: list):
     os.makedirs(log_dir, exist_ok=True)
     log_path = os.path.join(log_dir, "retrain_log.csv")
 
-    fieldnames = ["date", "pair", "n_samples", "score", "converged",
-                  "n_iter", "regime_counts", "status"]
+    fieldnames = ["date", "pair", "n_samples", "score", "bic", "aic",
+                  "converged", "n_iter", "regime_counts", "status"]
 
     write_header = not os.path.exists(log_path)
 
