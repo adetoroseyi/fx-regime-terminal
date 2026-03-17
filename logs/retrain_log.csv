@@ -3,3 +3,7 @@ date,pair,n_samples,score,converged,n_iter,regime_counts,status
 2026-03-17 09:27 UTC,GBPUSD,0,,False,,,"FAILED: 'covars' must be symmetric, positive-definite"
 2026-03-17 09:27 UTC,USDJPY,12245,123506.24,True,200,"{'Bull Trend': 9943, 'Bear Trend': 10, 'High Volatility Expansion': 130, 'Low Volatility Compression': 1287, 'Value Gap Formation': 11, 'Mean Reversion Range': 450, 'Noise': 381}",OK
 2026-03-17 09:27 UTC,USDCHF,0,,False,,,"FAILED: 'covars' must be symmetric, positive-definite"
+2026-03-17 09:43 UTC,EURUSD,0,,False,,,FAILED: Failed to fetch data for EURUSD: No data returned for EURUSD (EURUSD=X)
+2026-03-17 09:43 UTC,GBPUSD,0,,False,,,"FAILED: HMM training failed after trying min_covar=[0.001, 0.01, 0.1]: 'covars' must be symmetric, positive-definite"
+2026-03-17 09:43 UTC,USDJPY,0,,False,,,"FAILED: HMM training failed after trying min_covar=[0.001, 0.01, 0.1]: 'covars' must be symmetric, positive-definite"
+2026-03-17 09:43 UTC,USDCHF,12297,125642.91,True,200,"{'Bull Trend': 1, 'Bear Trend': 35, 'High Volatility Expansion': 147, 'Low Volatility Compression': 3098, 'Value Gap Formation': 632, 'Mean Reversion Range': 8170, 'Noise': 179}",OK
