@@ -7,3 +7,7 @@ date,pair,n_samples,score,converged,n_iter,regime_counts,status
 2026-03-17 09:43 UTC,GBPUSD,0,,False,,,"FAILED: HMM training failed after trying min_covar=[0.001, 0.01, 0.1]: 'covars' must be symmetric, positive-definite"
 2026-03-17 09:43 UTC,USDJPY,0,,False,,,"FAILED: HMM training failed after trying min_covar=[0.001, 0.01, 0.1]: 'covars' must be symmetric, positive-definite"
 2026-03-17 09:43 UTC,USDCHF,12297,125642.91,True,200,"{'Bull Trend': 1, 'Bear Trend': 35, 'High Volatility Expansion': 147, 'Low Volatility Compression': 3098, 'Value Gap Formation': 632, 'Mean Reversion Range': 8170, 'Noise': 179}",OK
+2026-03-17 09:51 UTC,EURUSD,12304,127353.88,True,200,"{'Bull Trend': 1, 'Bear Trend': 194, 'High Volatility Expansion': 48, 'Low Volatility Compression': 9414, 'Value Gap Formation': 75, 'Mean Reversion Range': 141, 'Noise': 2336}",OK
+2026-03-17 09:51 UTC,GBPUSD,12307,127552.78,True,200,"{'Bull Trend': 1, 'Bear Trend': 1, 'High Volatility Expansion': 11, 'Low Volatility Compression': 10693, 'Value Gap Formation': 68, 'Mean Reversion Range': 493, 'Noise': 939}",OK
+2026-03-17 09:51 UTC,USDJPY,12236,121386.61,True,200,"{'Bull Trend': 2, 'Bear Trend': 5, 'High Volatility Expansion': 14, 'Low Volatility Compression': 11174, 'Value Gap Formation': 5, 'Mean Reversion Range': 930, 'Noise': 73}",OK
+2026-03-17 09:51 UTC,USDCHF,12264,126505.67,True,200,"{'Bull Trend': 1, 'Bear Trend': 47, 'High Volatility Expansion': 45, 'Low Volatility Compression': 10395, 'Value Gap Formation': 1109, 'Mean Reversion Range': 7, 'Noise': 621}",OK
