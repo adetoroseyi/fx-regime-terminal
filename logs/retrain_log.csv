@@ -1,0 +1,5 @@
+date,pair,n_samples,score,converged,n_iter,regime_counts,status
+2026-03-17 09:27 UTC,EURUSD,0,,False,,,"FAILED: 'covars' must be symmetric, positive-definite"
+2026-03-17 09:27 UTC,GBPUSD,0,,False,,,"FAILED: 'covars' must be symmetric, positive-definite"
+2026-03-17 09:27 UTC,USDJPY,12245,123506.24,True,200,"{'Bull Trend': 9943, 'Bear Trend': 10, 'High Volatility Expansion': 130, 'Low Volatility Compression': 1287, 'Value Gap Formation': 11, 'Mean Reversion Range': 450, 'Noise': 381}",OK
+2026-03-17 09:27 UTC,USDCHF,0,,False,,,"FAILED: 'covars' must be symmetric, positive-definite"
