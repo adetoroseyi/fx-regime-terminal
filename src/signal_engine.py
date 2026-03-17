@@ -13,7 +13,7 @@ import json
 from datetime import datetime, timedelta
 
 from src.data_loader import fetch_pair_data, SUPPORTED_PAIRS
-from src.hmm_model import load_model, decode_regime, train_hmm, save_model
+from src.hmm_model import load_model, decode_regime, select_best_n_states, save_model
 from src.indicators import compute_all_indicators
 from src.strategy_fvg import check_fvg_signal
 from src.strategy_mr import check_mr_signal
@@ -130,10 +130,12 @@ def _process_pair(pair: str, cooldown: dict) -> dict:
         try:
             model, regime_map = load_model(pair)
         except FileNotFoundError:
-            print(f"  No saved model found, training fresh...")
-            model_result = train_hmm(df)
+            print(f"  No saved model found, selecting optimal and training...")
+            selection = select_best_n_states(df)
+            model_result = selection["best_result"]
             model = model_result["model"]
             regime_map = model_result["regime_map"]
+            print(f"  Selected n_states={selection['best_n']} (BIC)")
             save_model(model_result, pair)
 
         # Decode regime

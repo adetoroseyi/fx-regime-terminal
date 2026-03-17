@@ -312,10 +312,10 @@ def _auto_label_regimes(model: GaussianHMM, features: pd.DataFrame,
         if assign(int(row["state"]), REGIME_LABELS["mean_reversion"]):
             break
 
-    # 7. Noise: whatever is left
+    # Remaining states: assign as Noise (may be multiple with variable n_states)
     for i in range(n_states):
         if i not in assigned:
-            assign(i, REGIME_LABELS["noise"])
+            assigned[i] = REGIME_LABELS["noise"]
 
     return assigned
 
@@ -396,6 +396,7 @@ def save_model(result: dict, pair: str, directory: str = None):
     meta = {
         "pair": pair,
         "n_states": result["model"].n_components,
+        "covariance_type": result["model"].covariance_type,
         "score": float(result["score"]),
         "bic": float(result["bic"]),
         "aic": float(result["aic"]),
