@@ -66,16 +66,22 @@ def train_hmm(df: pd.DataFrame, n_states: int = N_REGIMES,
 
     # Try with increasing covariance regularization to handle
     # non-positive-definite covariance matrices during EM.
-    min_covar_values = [1e-3, 1e-2, 1e-1]
+    # Falls back to diagonal covariance if full covariance fails entirely.
+    attempts = [
+        ("full", 1e-3),
+        ("full", 1e-2),
+        ("full", 1e-1),
+        ("diag", 1e-3),
+    ]
     last_error = None
 
-    for min_covar in min_covar_values:
+    for cov_type, min_covar in attempts:
         try:
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
                 model = GaussianHMM(
                     n_components=n_states,
-                    covariance_type="full",
+                    covariance_type=cov_type,
                     n_iter=n_iter,
                     random_state=random_state,
                     min_covar=min_covar,
@@ -107,8 +113,7 @@ def train_hmm(df: pd.DataFrame, n_states: int = N_REGIMES,
             raise
 
     raise ValueError(
-        f"HMM training failed after trying min_covar={min_covar_values}: "
-        f"{last_error}"
+        f"HMM training failed after all attempts: {last_error}"
     )
 
 
