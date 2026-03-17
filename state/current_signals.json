@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-17T09:52:01.401251",
+  "generated_at": "2026-03-17T10:22:52.810007",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
       "regime": "Low Volatility Compression",
-      "confidence": 98.0,
+      "confidence": 100.0,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -13,12 +13,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-17T09:52:00.843236"
+      "last_updated": "2026-03-17T10:22:52.101422"
     },
     "GBPUSD": {
       "pair": "GBPUSD",
       "regime": "Low Volatility Compression",
-      "confidence": 99.9,
+      "confidence": 100.0,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -27,26 +27,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-17T09:52:01.052870"
+      "last_updated": "2026-03-17T10:22:52.404096"
     },
     "USDJPY": {
       "pair": "USDJPY",
-      "regime": "Low Volatility Compression",
-      "confidence": 99.9,
-      "regime_confirmed": true,
-      "signal_direction": "HOLD",
-      "active_strategy": null,
-      "entry_zone": null,
-      "stop_loss": null,
-      "take_profit": null,
-      "confirmations": {},
-      "cooldown_active": false,
-      "last_updated": "2026-03-17T09:52:01.170206"
-    },
-    "USDCHF": {
-      "pair": "USDCHF",
-      "regime": "Low Volatility Compression",
-      "confidence": 95.7,
+      "regime": "Mean Reversion Range",
+      "confidence": 49.7,
       "regime_confirmed": false,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -55,7 +41,21 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-17T09:52:01.277502"
+      "last_updated": "2026-03-17T10:22:52.559311"
+    },
+    "USDCHF": {
+      "pair": "USDCHF",
+      "regime": "Low Volatility Compression",
+      "confidence": 100.0,
+      "regime_confirmed": true,
+      "signal_direction": "HOLD",
+      "active_strategy": null,
+      "entry_zone": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "confirmations": {},
+      "cooldown_active": false,
+      "last_updated": "2026-03-17T10:22:52.675204"
     }
   },
   "signals_fired": 0
