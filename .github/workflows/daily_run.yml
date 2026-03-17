@@ -36,6 +36,16 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
 
+      - name: Run backtests for all pairs
+        run: python -m src.backtester --all-pairs --strategy both --days 365
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Publish data to dashboard
+        run: python -m src.publish_dashboard
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
       - name: Send Telegram notifications
         run: python -m src.telegram_notifier
         env:
@@ -47,8 +57,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/ logs/ -f
-          git diff --cached --quiet || git commit -m "chore: update signals and logs [skip ci]"
+          git add state/ logs/ results/ models/*_meta.json dashboard/data/ -f
+          git diff --cached --quiet || git commit -m "chore: update signals, backtest results and dashboard data [skip ci]"
           git push
 
       - name: Upload results as artifact
