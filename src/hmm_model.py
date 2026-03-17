@@ -64,34 +64,52 @@ def train_hmm(df: pd.DataFrame, n_states: int = N_REGIMES,
     features = compute_features(df)
     X = features.values
 
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        model = GaussianHMM(
-            n_components=n_states,
-            covariance_type="full",
-            n_iter=n_iter,
-            random_state=random_state,
-            verbose=False,
-        )
-        model.fit(X)
+    # Try with increasing covariance regularization to handle
+    # non-positive-definite covariance matrices during EM.
+    min_covar_values = [1e-3, 1e-2, 1e-1]
+    last_error = None
 
-    # Decode most likely state sequence (Viterbi)
-    states = model.predict(X)
+    for min_covar in min_covar_values:
+        try:
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                model = GaussianHMM(
+                    n_components=n_states,
+                    covariance_type="full",
+                    n_iter=n_iter,
+                    random_state=random_state,
+                    min_covar=min_covar,
+                    verbose=False,
+                )
+                model.fit(X)
 
-    # Posterior probabilities
-    posteriors = model.predict_proba(X)
+            # Decode most likely state sequence (Viterbi)
+            states = model.predict(X)
 
-    # Auto-label regimes based on cluster characteristics
-    regime_map = _auto_label_regimes(model, features, states)
+            # Posterior probabilities
+            posteriors = model.predict_proba(X)
 
-    return {
-        "model": model,
-        "features": features,
-        "states": states,
-        "posteriors": posteriors,
-        "regime_map": regime_map,
-        "score": model.score(X),
-    }
+            # Auto-label regimes based on cluster characteristics
+            regime_map = _auto_label_regimes(model, features, states)
+
+            return {
+                "model": model,
+                "features": features,
+                "states": states,
+                "posteriors": posteriors,
+                "regime_map": regime_map,
+                "score": model.score(X),
+            }
+        except ValueError as e:
+            if "positive-definite" in str(e):
+                last_error = e
+                continue
+            raise
+
+    raise ValueError(
+        f"HMM training failed after trying min_covar={min_covar_values}: "
+        f"{last_error}"
+    )
 
 
 def _auto_label_regimes(model: GaussianHMM, features: pd.DataFrame,
