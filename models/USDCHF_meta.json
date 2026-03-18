@@ -1,0 +1,15 @@
+{
+  "pair": "USDCHF",
+  "n_states": 4,
+  "covariance_type": "full",
+  "score": 126601.49202101142,
+  "bic": -3102495683.3770757,
+  "aic": -3102496061.466906,
+  "regime_map": {
+    "2": "Bull Trend",
+    "1": "Bear Trend",
+    "3": "High Volatility Expansion",
+    "0": "Low Volatility Compression"
+  },
+  "n_samples": 12253
+}
