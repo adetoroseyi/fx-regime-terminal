@@ -1,67 +1,82 @@
 {
   "USDJPY": {
     "pair": "USDJPY",
-    "n_states": 5,
+    "n_states": 10,
     "covariance_type": "full",
-    "score": 123468.32043647925,
-    "bic": -3013367179.3215523,
-    "aic": -3013367690.5727124,
+    "score": 123510.94059707553,
+    "bic": -3014159215.962908,
+    "aic": -3014160616.3310313,
     "regime_map": {
-      "3": "Bull Trend",
-      "1": "Bear Trend",
-      "4": "High Volatility Expansion",
-      "2": "Low Volatility Compression",
-      "0": "Value Gap Formation"
+      "5": "Bull Trend",
+      "6": "Bear Trend",
+      "8": "High Volatility Expansion",
+      "1": "Low Volatility Compression",
+      "4": "Value Gap Formation",
+      "0": "Mean Reversion Range",
+      "2": "Noise",
+      "3": "Noise",
+      "7": "Noise",
+      "9": "Noise"
     },
-    "n_samples": 12203
+    "n_samples": 12202
   },
   "EURUSD": {
     "pair": "EURUSD",
-    "n_states": 7,
+    "n_states": 10,
     "covariance_type": "full",
-    "score": 127243.73759720587,
-    "bic": -3107291027.6125946,
-    "aic": -3107291850.1237674,
+    "score": 127396.68066659478,
+    "bic": -3110770370.0403943,
+    "aic": -3110771770.5169115,
     "regime_map": {
-      "0": "Bull Trend",
-      "4": "Bear Trend",
-      "2": "High Volatility Expansion",
-      "1": "Low Volatility Compression",
-      "6": "Value Gap Formation",
-      "5": "Mean Reversion Range",
-      "3": "Noise"
+      "8": "Bull Trend",
+      "9": "Bear Trend",
+      "1": "High Volatility Expansion",
+      "7": "Low Volatility Compression",
+      "4": "Value Gap Formation",
+      "0": "Mean Reversion Range",
+      "2": "Noise",
+      "3": "Noise",
+      "5": "Noise",
+      "6": "Noise"
     },
-    "n_samples": 12210
+    "n_samples": 12209
   },
   "USDCHF": {
     "pair": "USDCHF",
     "n_states": 6,
     "covariance_type": "full",
-    "score": 126314.16860901742,
-    "bic": -3088127956.5603285,
-    "aic": -3088128616.153258,
+    "score": 126328.61375330207,
+    "bic": -3088228454.227574,
+    "aic": -3088229113.8132224,
     "regime_map": {
-      "5": "Bull Trend",
+      "3": "Bull Trend",
       "1": "Bear Trend",
-      "3": "High Volatility Expansion",
-      "2": "Low Volatility Compression",
-      "0": "Value Gap Formation",
-      "4": "Mean Reversion Range"
+      "4": "High Volatility Expansion",
+      "0": "Low Volatility Compression",
+      "5": "Value Gap Formation",
+      "2": "Mean Reversion Range"
     },
-    "n_samples": 12224
+    "n_samples": 12223
   },
   "GBPUSD": {
     "pair": "GBPUSD",
-    "n_states": 3,
+    "n_states": 10,
     "covariance_type": "full",
-    "score": 127348.572222006,
-    "bic": -3108833015.7447085,
-    "aic": -3108833275.0836105,
+    "score": 127604.43820868242,
+    "bic": -3114822558.259352,
+    "aic": -3114823958.673938,
     "regime_map": {
-      "1": "Bull Trend",
-      "2": "Bear Trend",
-      "0": "High Volatility Expansion"
+      "5": "Bull Trend",
+      "9": "Bear Trend",
+      "3": "High Volatility Expansion",
+      "4": "Low Volatility Compression",
+      "2": "Value Gap Formation",
+      "8": "Mean Reversion Range",
+      "0": "Noise",
+      "1": "Noise",
+      "6": "Noise",
+      "7": "Noise"
     },
-    "n_samples": 12206
+    "n_samples": 12205
   }
 }
