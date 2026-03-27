@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-03-26T02:56:20.326322",
+  "generated_at": "2026-03-27T02:59:26.700721",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
-      "regime": "Mean Reversion Range",
-      "confidence": 85.1,
-      "regime_confirmed": false,
+      "regime": "Low Volatility Compression",
+      "confidence": 99.9,
+      "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -13,12 +13,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-26T02:56:19.510089"
+      "last_updated": "2026-03-27T02:59:26.119695"
     },
     "GBPUSD": {
       "pair": "GBPUSD",
       "regime": "Low Volatility Compression",
-      "confidence": 97.0,
+      "confidence": 100.0,
       "regime_confirmed": false,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -27,12 +27,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-26T02:56:19.906482"
+      "last_updated": "2026-03-27T02:59:26.379916"
     },
     "USDJPY": {
       "pair": "USDJPY",
       "regime": "Bull Trend",
-      "confidence": 99.9,
+      "confidence": 99.8,
       "regime_confirmed": false,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -41,13 +41,13 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-26T02:56:20.033713"
+      "last_updated": "2026-03-27T02:59:26.489639"
     },
     "USDCHF": {
       "pair": "USDCHF",
       "regime": "Low Volatility Compression",
       "confidence": 99.9,
-      "regime_confirmed": false,
+      "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -55,7 +55,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-03-26T02:56:20.154604"
+      "last_updated": "2026-03-27T02:59:26.577365"
     }
   },
   "signals_fired": 0
