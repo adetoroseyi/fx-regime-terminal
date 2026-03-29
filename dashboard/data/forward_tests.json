@@ -408,5 +408,46 @@
         "take_profit": null
       }
     }
+  },
+  {
+    "timestamp": "2026-03-29T03:26:45.654167",
+    "pairs": {
+      "EURUSD": {
+        "regime": "Low Volatility Compression",
+        "confidence": 100.0,
+        "signal_direction": "HOLD",
+        "regime_confirmed": true,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      },
+      "GBPUSD": {
+        "regime": "Low Volatility Compression",
+        "confidence": 99.9,
+        "signal_direction": "HOLD",
+        "regime_confirmed": true,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      },
+      "USDJPY": {
+        "regime": "Bull Trend",
+        "confidence": 98.8,
+        "signal_direction": "HOLD",
+        "regime_confirmed": true,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      },
+      "USDCHF": {
+        "regime": "Low Volatility Compression",
+        "confidence": 99.9,
+        "signal_direction": "HOLD",
+        "regime_confirmed": true,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      }
+    }
   }
 ]
