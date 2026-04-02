@@ -1,24 +1,10 @@
 {
-  "generated_at": "2026-04-01T03:29:24.442825",
+  "generated_at": "2026-04-02T02:54:24.353256",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
-      "regime": "Low Volatility Compression",
-      "confidence": 99.5,
-      "regime_confirmed": true,
-      "signal_direction": "HOLD",
-      "active_strategy": null,
-      "entry_zone": null,
-      "stop_loss": null,
-      "take_profit": null,
-      "confirmations": {},
-      "cooldown_active": false,
-      "last_updated": "2026-04-01T03:29:23.176920"
-    },
-    "GBPUSD": {
-      "pair": "GBPUSD",
-      "regime": "Bull Trend",
-      "confidence": 99.4,
+      "regime": "Value Gap Formation",
+      "confidence": 100.0,
       "regime_confirmed": false,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -27,27 +13,41 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-01T03:29:23.808534"
+      "last_updated": "2026-04-02T02:54:23.295786"
+    },
+    "GBPUSD": {
+      "pair": "GBPUSD",
+      "regime": "Value Gap Formation",
+      "confidence": 100.0,
+      "regime_confirmed": false,
+      "signal_direction": "HOLD",
+      "active_strategy": null,
+      "entry_zone": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "confirmations": {},
+      "cooldown_active": false,
+      "last_updated": "2026-04-02T02:54:23.832973"
     },
     "USDJPY": {
       "pair": "USDJPY",
-      "regime": "Mean Reversion Range",
-      "confidence": 99.9,
-      "regime_confirmed": true,
-      "signal_direction": "HOLD",
+      "regime": "Noise",
+      "confidence": 98.9,
+      "regime_confirmed": false,
+      "signal_direction": "AVOID",
       "active_strategy": null,
       "entry_zone": null,
       "stop_loss": null,
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-01T03:29:24.078590"
+      "last_updated": "2026-04-02T02:54:24.066647"
     },
     "USDCHF": {
       "pair": "USDCHF",
-      "regime": "Low Volatility Compression",
-      "confidence": 99.9,
-      "regime_confirmed": true,
+      "regime": "Value Gap Formation",
+      "confidence": 100.0,
+      "regime_confirmed": false,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -55,7 +55,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-01T03:29:24.260788"
+      "last_updated": "2026-04-02T02:54:24.225122"
     }
   },
   "signals_fired": 0

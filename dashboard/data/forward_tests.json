@@ -572,5 +572,46 @@
         "take_profit": null
       }
     }
+  },
+  {
+    "timestamp": "2026-04-02T02:58:47.696937",
+    "pairs": {
+      "EURUSD": {
+        "regime": "Value Gap Formation",
+        "confidence": 100.0,
+        "signal_direction": "HOLD",
+        "regime_confirmed": false,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      },
+      "GBPUSD": {
+        "regime": "Value Gap Formation",
+        "confidence": 100.0,
+        "signal_direction": "HOLD",
+        "regime_confirmed": false,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      },
+      "USDJPY": {
+        "regime": "Noise",
+        "confidence": 98.9,
+        "signal_direction": "AVOID",
+        "regime_confirmed": false,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      },
+      "USDCHF": {
+        "regime": "Value Gap Formation",
+        "confidence": 100.0,
+        "signal_direction": "HOLD",
+        "regime_confirmed": false,
+        "entry_price": null,
+        "stop_loss": null,
+        "take_profit": null
+      }
+    }
   }
 ]
