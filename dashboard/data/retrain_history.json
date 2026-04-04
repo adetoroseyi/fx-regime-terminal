@@ -1,69 +1,5 @@
 [
   {
-    "date": "2026-03-27 02:57 UTC",
-    "pair": "USDJPY",
-    "n_samples": "12237",
-    "score": "7",
-    "converged": "123472.69",
-    "n_iter": "-3013473389.83",
-    "regime_counts": "-3013474212.28",
-    "status": "True",
-    "null": [
-      "200",
-      "{'Bull Trend': 9906, 'Bear Trend': 3, 'High Volatility Expansion': 30, 'Low Volatility Compression': 1249, 'Value Gap Formation': 9, 'Mean Reversion Range': 878, 'Noise': 128}",
-      "{3: np.float64(-2998589818.0), 4: np.float64(-2998719498.0), 5: np.float64(-3008104556.0), 6: np.float64(-3011586914.0), 7: np.float64(-3013473390.0), 8: np.float64(-3012018781.0), 9: np.float64(-3012368446.0)}",
-      "OK"
-    ]
-  },
-  {
-    "date": "2026-03-27 02:57 UTC",
-    "pair": "USDCHF",
-    "n_samples": "12264",
-    "score": "6",
-    "converged": "126399.16",
-    "n_iter": "-3090205879.91",
-    "regime_counts": "-3090206539.5",
-    "status": "True",
-    "null": [
-      "200",
-      "{'Bull Trend': 1, 'Bear Trend': 45, 'High Volatility Expansion': 45, 'Low Volatility Compression': 10460, 'Value Gap Formation': 1036, 'Mean Reversion Range': 637}",
-      "{3: np.float64(-3077374303.0), 4: np.float64(-3080679152.0), 5: np.float64(-3032362775.0), 6: np.float64(-3090205880.0), 7: np.float64(-3034144999.0), 8: np.float64(-3080823167.0), 9: np.float64(-3031768218.0), 10: np.float64(-3027854945.0)}",
-      "OK"
-    ]
-  },
-  {
-    "date": "2026-03-28 02:46 UTC",
-    "pair": "EURUSD",
-    "n_samples": "12299",
-    "score": "9",
-    "converged": "127159.35",
-    "n_iter": "-3103958249.55",
-    "regime_counts": "-3103959442.5",
-    "status": "True",
-    "null": [
-      "200",
-      "{'Bull Trend': 1, 'Bear Trend': 13, 'High Volatility Expansion': 23, 'Low Volatility Compression': 10920, 'Value Gap Formation': 719, 'Mean Reversion Range': 1, 'Noise': 22}",
-      "{3: np.float64(-3092949455.0), 4: np.float64(-3100959076.0), 5: np.float64(-3075998077.0), 6: np.float64(-3038773544.0), 7: np.float64(-3103269194.0), 8: np.float64(-3041617091.0), 9: np.float64(-3103958250.0), 10: np.float64(-3035750119.0)}",
-      "OK"
-    ]
-  },
-  {
-    "date": "2026-03-28 02:46 UTC",
-    "pair": "GBPUSD",
-    "n_samples": "12302",
-    "score": "5",
-    "converged": "127365.41",
-    "n_iter": "-3107970082.55",
-    "regime_counts": "-3107970593.79",
-    "status": "True",
-    "null": [
-      "200",
-      "{'Bull Trend': 1, 'Bear Trend': 123, 'High Volatility Expansion': 452, 'Low Volatility Compression': 10512, 'Value Gap Formation': 1113}",
-      "{3: np.float64(-3104325199.0), 4: np.float64(-3103661193.0), 5: np.float64(-3107970083.0), 6: np.float64(-3084918527.0), 7: np.float64(-3049920902.0), 8: np.float64(-2980471722.0), 9: np.float64(-3051239007.0), 10: np.float64(-3046054419.0)}",
-      "OK"
-    ]
-  },
-  {
     "date": "2026-03-28 02:46 UTC",
     "pair": "USDJPY",
     "n_samples": "12231",
@@ -476,6 +412,70 @@
       "200",
       "{'Bull Trend': 45, 'Bear Trend': 23, 'High Volatility Expansion': 75, 'Low Volatility Compression': 10257, 'Value Gap Formation': 1199, 'Mean Reversion Range': 625}",
       "{3: np.float64(-3027981413.0), 4: np.float64(-3078627651.0), 5: np.float64(-3075963523.0), 6: np.float64(-3089659348.0), 7: np.float64(-3029295034.0), 8: np.float64(-3031343140.0), 9: np.float64(-3031244108.0), 10: np.float64(-3033330769.0)}",
+      "OK"
+    ]
+  },
+  {
+    "date": "2026-04-04 02:45 UTC",
+    "pair": "EURUSD",
+    "n_samples": "12300",
+    "score": "9",
+    "converged": "127389.88",
+    "n_iter": "-3109840198.35",
+    "regime_counts": "-3109841391.31",
+    "status": "True",
+    "null": [
+      "200",
+      "{'Bull Trend': 2, 'Bear Trend': 15, 'High Volatility Expansion': 33, 'Low Volatility Compression': 1, 'Value Gap Formation': 51, 'Mean Reversion Range': 9843, 'Noise': 1539}",
+      "{3: np.float64(-3097771309.0), 4: np.float64(-3097714316.0), 5: np.float64(-3103623578.0), 7: np.float64(-3044586191.0), 8: np.float64(-3041989959.0), 9: np.float64(-3109840198.0), 10: np.float64(-3038484617.0)}",
+      "OK"
+    ]
+  },
+  {
+    "date": "2026-04-04 02:45 UTC",
+    "pair": "GBPUSD",
+    "n_samples": "12303",
+    "score": "3",
+    "converged": "127130.91",
+    "n_iter": "-3102502302.38",
+    "regime_counts": "-3102502561.7",
+    "status": "True",
+    "null": [
+      "200",
+      "{'Bull Trend': 9958, 'Bear Trend': 220, 'High Volatility Expansion': 2024}",
+      "{3: np.float64(-3102502302.0), 4: np.float64(-3100297223.0), 5: np.float64(-3048714465.0), 6: np.float64(-3049283390.0), 7: np.float64(-3031813871.0), 8: np.float64(-3099177311.0), 9: np.float64(-3044818172.0)}",
+      "OK"
+    ]
+  },
+  {
+    "date": "2026-04-04 02:45 UTC",
+    "pair": "USDJPY",
+    "n_samples": "12231",
+    "score": "6",
+    "converged": "123397.99",
+    "n_iter": "-3010416441.25",
+    "regime_counts": "-3010417100.65",
+    "status": "True",
+    "null": [
+      "200",
+      "{'Bull Trend': 1, 'Bear Trend': 125, 'High Volatility Expansion': 18, 'Low Volatility Compression': 9996, 'Value Gap Formation': 1270, 'Mean Reversion Range': 788}",
+      "{3: np.float64(-2990824198.0), 4: np.float64(-3009644753.0), 5: np.float64(-2959126192.0), 6: np.float64(-3010416441.0), 7: np.float64(-3000992676.0), 8: np.float64(-2987069408.0), 9: np.float64(-3009263917.0), 10: np.float64(-2957844719.0)}",
+      "OK"
+    ]
+  },
+  {
+    "date": "2026-04-04 02:45 UTC",
+    "pair": "USDCHF",
+    "n_samples": "12260",
+    "score": "6",
+    "converged": "126331.12",
+    "n_iter": "-3087279130.71",
+    "regime_counts": "-3087279790.27",
+    "status": "True",
+    "null": [
+      "200",
+      "{'Bull Trend': 45, 'Bear Trend': 21, 'High Volatility Expansion': 70, 'Low Volatility Compression': 10303, 'Value Gap Formation': 1161, 'Mean Reversion Range': 619}",
+      "{3: np.float64(-3076627194.0), 4: np.float64(-3078910255.0), 5: np.float64(-3073775253.0), 6: np.float64(-3087279131.0), 7: np.float64(-3030296324.0), 8: np.float64(-3024153609.0), 9: np.float64(-3079819465.0), 10: np.float64(-3025787419.0)}",
       "OK"
     ]
   }
