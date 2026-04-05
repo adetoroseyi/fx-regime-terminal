@@ -1,20 +1,15 @@
 {
   "pair": "EURUSD",
-  "n_states": 9,
+  "n_states": 4,
   "covariance_type": "full",
-  "score": 127389.87847399144,
-  "bic": -3109840198.3481297,
-  "aic": -3109841391.307079,
+  "score": 126942.93081143318,
+  "bic": -3093852629.926055,
+  "aic": -3093853007.7362494,
   "regime_map": {
-    "1": "Bull Trend",
-    "7": "Bear Trend",
-    "2": "High Volatility Expansion",
-    "6": "Low Volatility Compression",
-    "3": "Value Gap Formation",
-    "5": "Mean Reversion Range",
-    "0": "Noise",
-    "4": "Noise",
-    "8": "Noise"
+    "0": "Bull Trend",
+    "1": "Bear Trend",
+    "3": "High Volatility Expansion",
+    "2": "Low Volatility Compression"
   },
-  "n_samples": 12206
+  "n_samples": 12186
 }

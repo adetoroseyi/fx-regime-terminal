@@ -1,17 +1,16 @@
 {
   "pair": "USDCHF",
-  "n_states": 6,
+  "n_states": 5,
   "covariance_type": "full",
-  "score": 126331.12236128465,
-  "bic": -3087279130.708556,
-  "aic": -3087279790.2650743,
+  "score": 125895.5894266592,
+  "bic": -3071348150.429895,
+  "aic": -3071348661.6527777,
   "regime_map": {
-    "4": "Bull Trend",
-    "1": "Bear Trend",
+    "0": "Bull Trend",
+    "2": "Bear Trend",
     "3": "High Volatility Expansion",
-    "5": "Low Volatility Compression",
-    "2": "Value Gap Formation",
-    "0": "Mean Reversion Range"
+    "4": "Low Volatility Compression",
+    "1": "Value Gap Formation"
   },
-  "n_samples": 12219
+  "n_samples": 12198
 }
