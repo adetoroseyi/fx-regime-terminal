@@ -3,16 +3,16 @@
     "pair": "EURUSD",
     "n_states": 6,
     "covariance_type": "full",
-    "score": 127213.78479987972,
-    "bic": -3106814214.8844333,
-    "aic": -3106814874.382663,
+    "score": 127433.20660033094,
+    "bic": -3112172934.0950527,
+    "aic": -3112173593.593282,
     "regime_map": {
-      "5": "Bull Trend",
-      "4": "Bear Trend",
-      "3": "High Volatility Expansion",
-      "2": "Low Volatility Compression",
-      "1": "Value Gap Formation",
-      "0": "Mean Reversion Range"
+      "0": "Bull Trend",
+      "1": "Bear Trend",
+      "4": "High Volatility Expansion",
+      "3": "Low Volatility Compression",
+      "5": "Value Gap Formation",
+      "2": "Mean Reversion Range"
     },
     "n_samples": 12211
   },
@@ -20,9 +20,9 @@
     "pair": "GBPUSD",
     "n_states": 6,
     "covariance_type": "full",
-    "score": 127278.26495260884,
-    "bic": -3106861610.0386944,
-    "aic": -3106862269.4931817,
+    "score": 127257.4996704827,
+    "bic": -3106354729.5019956,
+    "aic": -3106355388.956483,
     "regime_map": {
       "0": "Bull Trend",
       "5": "Bear Trend",
@@ -35,34 +35,37 @@
   },
   "USDJPY": {
     "pair": "USDJPY",
-    "n_states": 5,
+    "n_states": 7,
     "covariance_type": "full",
-    "score": 123378.10224860895,
-    "bic": -3010918558.0295477,
-    "aic": -3010919069.275053,
+    "score": 123500.61065806728,
+    "bic": -3013907858.0610523,
+    "aic": -3013908680.499474,
     "regime_map": {
-      "1": "Bull Trend",
-      "2": "Bear Trend",
-      "3": "High Volatility Expansion",
+      "5": "Bull Trend",
+      "3": "Bear Trend",
+      "4": "High Volatility Expansion",
       "0": "Low Volatility Compression",
-      "4": "Value Gap Formation"
+      "1": "Value Gap Formation",
+      "2": "Mean Reversion Range",
+      "6": "Noise"
     },
     "n_samples": 12202
   },
   "USDCHF": {
     "pair": "USDCHF",
-    "n_states": 6,
+    "n_states": 7,
     "covariance_type": "full",
-    "score": 126211.60777137631,
-    "bic": -3085368125.993417,
-    "aic": -3085368785.5790653,
+    "score": 126306.02503236319,
+    "bic": -3087676043.3118587,
+    "aic": -3087676865.9411507,
     "regime_map": {
-      "2": "Bull Trend",
-      "1": "Bear Trend",
-      "5": "High Volatility Expansion",
-      "0": "Low Volatility Compression",
+      "1": "Bull Trend",
+      "0": "Bear Trend",
+      "6": "High Volatility Expansion",
+      "4": "Low Volatility Compression",
       "3": "Value Gap Formation",
-      "4": "Mean Reversion Range"
+      "5": "Mean Reversion Range",
+      "2": "Noise"
     },
     "n_samples": 12223
   }
