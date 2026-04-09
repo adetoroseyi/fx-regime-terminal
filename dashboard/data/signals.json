@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-08T03:19:20.162179",
+  "generated_at": "2026-04-09T02:55:30.042695",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
-      "regime": "Bull Trend",
-      "confidence": 99.8,
-      "regime_confirmed": false,
+      "regime": "Low Volatility Compression",
+      "confidence": 98.5,
+      "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -13,13 +13,13 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-08T03:19:19.715082"
+      "last_updated": "2026-04-09T02:55:29.390491"
     },
     "GBPUSD": {
       "pair": "GBPUSD",
-      "regime": "Low Volatility Compression",
+      "regime": "Bull Trend",
       "confidence": 99.9,
-      "regime_confirmed": false,
+      "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -27,13 +27,13 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-08T03:19:19.882998"
+      "last_updated": "2026-04-09T02:55:29.620880"
     },
     "USDJPY": {
       "pair": "USDJPY",
-      "regime": "Low Volatility Compression",
-      "confidence": 97.8,
-      "regime_confirmed": false,
+      "regime": "Bull Trend",
+      "confidence": 99.7,
+      "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -41,13 +41,13 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-08T03:19:19.977046"
+      "last_updated": "2026-04-09T02:55:29.728995"
     },
     "USDCHF": {
       "pair": "USDCHF",
       "regime": "Low Volatility Compression",
-      "confidence": 95.2,
-      "regime_confirmed": false,
+      "confidence": 99.6,
+      "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
@@ -55,7 +55,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-08T03:19:20.069160"
+      "last_updated": "2026-04-09T02:55:29.918556"
     }
   },
   "signals_fired": 0
