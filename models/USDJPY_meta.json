@@ -2,17 +2,17 @@
   "pair": "USDJPY",
   "n_states": 7,
   "covariance_type": "full",
-  "score": 123631.55694407695,
-  "bic": -3018339786.748798,
-  "aic": -3018340609.2326946,
+  "score": 123440.23049189337,
+  "bic": -3008978014.1594,
+  "aic": -3008978836.4703927,
   "regime_map": {
-    "6": "Bull Trend",
-    "3": "Bear Trend",
+    "3": "Bull Trend",
+    "0": "Bear Trend",
     "1": "High Volatility Expansion",
-    "5": "Low Volatility Compression",
+    "2": "Low Volatility Compression",
     "4": "Value Gap Formation",
-    "2": "Mean Reversion Range",
-    "0": "Noise"
+    "5": "Mean Reversion Range",
+    "6": "Noise"
   },
-  "n_samples": 12207
+  "n_samples": 12188
 }
