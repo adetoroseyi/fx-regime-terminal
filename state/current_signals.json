@@ -1,22 +1,8 @@
 {
-  "generated_at": "2026-04-20T03:38:04.944072",
+  "generated_at": "2026-04-21T03:30:33.290369",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
-      "regime": "Mean Reversion Range",
-      "confidence": 100.0,
-      "regime_confirmed": true,
-      "signal_direction": "HOLD",
-      "active_strategy": null,
-      "entry_zone": null,
-      "stop_loss": null,
-      "take_profit": null,
-      "confirmations": {},
-      "cooldown_active": false,
-      "last_updated": "2026-04-20T03:38:04.295963"
-    },
-    "GBPUSD": {
-      "pair": "GBPUSD",
       "regime": "Bull Trend",
       "confidence": 100.0,
       "regime_confirmed": true,
@@ -27,25 +13,11 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-20T03:38:04.560688"
+      "last_updated": "2026-04-21T03:30:32.218822"
     },
-    "USDJPY": {
-      "pair": "USDJPY",
-      "regime": "Low Volatility Compression",
-      "confidence": 99.7,
-      "regime_confirmed": true,
-      "signal_direction": "HOLD",
-      "active_strategy": null,
-      "entry_zone": null,
-      "stop_loss": null,
-      "take_profit": null,
-      "confirmations": {},
-      "cooldown_active": false,
-      "last_updated": "2026-04-20T03:38:04.687727"
-    },
-    "USDCHF": {
-      "pair": "USDCHF",
-      "regime": "Low Volatility Compression",
+    "GBPUSD": {
+      "pair": "GBPUSD",
+      "regime": "Bull Trend",
       "confidence": 99.9,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
@@ -55,7 +27,35 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-20T03:38:04.808318"
+      "last_updated": "2026-04-21T03:30:32.749125"
+    },
+    "USDJPY": {
+      "pair": "USDJPY",
+      "regime": "Bull Trend",
+      "confidence": 99.9,
+      "regime_confirmed": true,
+      "signal_direction": "HOLD",
+      "active_strategy": null,
+      "entry_zone": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "confirmations": {},
+      "cooldown_active": false,
+      "last_updated": "2026-04-21T03:30:32.925515"
+    },
+    "USDCHF": {
+      "pair": "USDCHF",
+      "regime": "Bull Trend",
+      "confidence": 99.9,
+      "regime_confirmed": true,
+      "signal_direction": "HOLD",
+      "active_strategy": null,
+      "entry_zone": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "confirmations": {},
+      "cooldown_active": false,
+      "last_updated": "2026-04-21T03:30:33.129783"
     }
   },
   "signals_fired": 0
