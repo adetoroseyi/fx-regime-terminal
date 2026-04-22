@@ -1,8 +1,22 @@
 {
-  "generated_at": "2026-04-21T03:30:33.290369",
+  "generated_at": "2026-04-22T03:28:21.080896",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
+      "regime": "Noise",
+      "confidence": 100.0,
+      "regime_confirmed": true,
+      "signal_direction": "AVOID",
+      "active_strategy": null,
+      "entry_zone": null,
+      "stop_loss": null,
+      "take_profit": null,
+      "confirmations": {},
+      "cooldown_active": false,
+      "last_updated": "2026-04-22T03:28:20.308288"
+    },
+    "GBPUSD": {
+      "pair": "GBPUSD",
       "regime": "Bull Trend",
       "confidence": 100.0,
       "regime_confirmed": true,
@@ -13,21 +27,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-21T03:30:32.218822"
-    },
-    "GBPUSD": {
-      "pair": "GBPUSD",
-      "regime": "Bull Trend",
-      "confidence": 99.9,
-      "regime_confirmed": true,
-      "signal_direction": "HOLD",
-      "active_strategy": null,
-      "entry_zone": null,
-      "stop_loss": null,
-      "take_profit": null,
-      "confirmations": {},
-      "cooldown_active": false,
-      "last_updated": "2026-04-21T03:30:32.749125"
+      "last_updated": "2026-04-22T03:28:20.703158"
     },
     "USDJPY": {
       "pair": "USDJPY",
@@ -41,7 +41,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-21T03:30:32.925515"
+      "last_updated": "2026-04-22T03:28:20.836438"
     },
     "USDCHF": {
       "pair": "USDCHF",
@@ -55,7 +55,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-21T03:30:33.129783"
+      "last_updated": "2026-04-22T03:28:20.955951"
     }
   },
   "signals_fired": 0
