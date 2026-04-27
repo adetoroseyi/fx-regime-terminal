@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-26T03:40:54.563731",
+  "generated_at": "2026-04-27T03:45:01.196063",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
       "regime": "Low Volatility Compression",
-      "confidence": 99.9,
+      "confidence": 100.0,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -13,12 +13,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-26T03:40:53.786753"
+      "last_updated": "2026-04-27T03:45:00.618409"
     },
     "GBPUSD": {
       "pair": "GBPUSD",
-      "regime": "Bull Trend",
-      "confidence": 99.9,
+      "regime": "Low Volatility Compression",
+      "confidence": 99.8,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -27,12 +27,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-26T03:40:54.090926"
+      "last_updated": "2026-04-27T03:45:00.806643"
     },
     "USDJPY": {
       "pair": "USDJPY",
       "regime": "Bull Trend",
-      "confidence": 96.3,
+      "confidence": 99.5,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -41,12 +41,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-26T03:40:54.202103"
+      "last_updated": "2026-04-27T03:45:00.913076"
     },
     "USDCHF": {
       "pair": "USDCHF",
-      "regime": "Low Volatility Compression",
-      "confidence": 90.5,
+      "regime": "Bull Trend",
+      "confidence": 100.0,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -55,7 +55,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-04-26T03:40:54.308231"
+      "last_updated": "2026-04-27T03:45:01.108435"
     }
   },
   "signals_fired": 0
