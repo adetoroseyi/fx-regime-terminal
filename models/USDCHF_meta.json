@@ -2,9 +2,9 @@
   "pair": "USDCHF",
   "n_states": 6,
   "covariance_type": "full",
-  "score": 125889.04835518033,
-  "bic": -3070181273.9118996,
-  "aic": -3070181933.286138,
+  "score": 125889.02671585833,
+  "bic": -3070180746.1721144,
+  "aic": -3070181405.546353,
   "regime_map": {
     "5": "Bull Trend",
     "3": "Bear Trend",

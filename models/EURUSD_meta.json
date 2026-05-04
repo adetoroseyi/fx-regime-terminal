@@ -2,9 +2,9 @@
   "pair": "EURUSD",
   "n_states": 7,
   "covariance_type": "full",
-  "score": 127277.88294912057,
-  "bic": -3101251851.6728253,
-  "aic": -3101252673.938272,
+  "score": 127277.88294917457,
+  "bic": -3101251851.674141,
+  "aic": -3101252673.9395876,
   "regime_map": {
     "0": "Bull Trend",
     "2": "Bear Trend",
