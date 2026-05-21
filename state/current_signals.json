@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-20T04:12:55.781039",
+  "generated_at": "2026-05-21T04:21:21.074231",
   "pairs": {
     "EURUSD": {
       "pair": "EURUSD",
-      "regime": "Low Volatility Compression",
-      "confidence": 99.8,
+      "regime": "Bull Trend",
+      "confidence": 100.0,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -13,26 +13,26 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-05-20T04:12:54.669934"
+      "last_updated": "2026-05-21T04:21:20.018175"
     },
     "GBPUSD": {
       "pair": "GBPUSD",
-      "regime": "Noise",
+      "regime": "Bull Trend",
       "confidence": 100.0,
       "regime_confirmed": true,
-      "signal_direction": "AVOID",
+      "signal_direction": "HOLD",
       "active_strategy": null,
       "entry_zone": null,
       "stop_loss": null,
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-05-20T04:12:55.017195"
+      "last_updated": "2026-05-21T04:21:20.356494"
     },
     "USDJPY": {
       "pair": "USDJPY",
       "regime": "Bull Trend",
-      "confidence": 99.7,
+      "confidence": 99.9,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -41,12 +41,12 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-05-20T04:12:55.295189"
+      "last_updated": "2026-05-21T04:21:20.637094"
     },
     "USDCHF": {
       "pair": "USDCHF",
       "regime": "Low Volatility Compression",
-      "confidence": 100.0,
+      "confidence": 99.9,
       "regime_confirmed": true,
       "signal_direction": "HOLD",
       "active_strategy": null,
@@ -55,7 +55,7 @@
       "take_profit": null,
       "confirmations": {},
       "cooldown_active": false,
-      "last_updated": "2026-05-20T04:12:55.509202"
+      "last_updated": "2026-05-21T04:21:20.808365"
     }
   },
   "signals_fired": 0
