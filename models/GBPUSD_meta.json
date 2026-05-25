@@ -1,18 +1,20 @@
 {
   "pair": "GBPUSD",
-  "n_states": 7,
+  "n_states": 9,
   "covariance_type": "full",
-  "score": 126965.098008558,
-  "bic": -3091091231.9420543,
-  "aic": -3091092054.116353,
+  "score": 127511.33949043494,
+  "bic": -3111785214.018395,
+  "aic": -3111786406.9245744,
   "regime_map": {
-    "4": "Bull Trend",
-    "3": "Bear Trend",
-    "1": "High Volatility Expansion",
-    "0": "Low Volatility Compression",
-    "2": "Value Gap Formation",
-    "5": "Mean Reversion Range",
-    "6": "Noise"
+    "3": "Bull Trend",
+    "2": "Bear Trend",
+    "4": "High Volatility Expansion",
+    "8": "Low Volatility Compression",
+    "7": "Value Gap Formation",
+    "6": "Mean Reversion Range",
+    "0": "Noise",
+    "1": "Noise",
+    "5": "Noise"
   },
-  "n_samples": 12173
+  "n_samples": 12202
 }
