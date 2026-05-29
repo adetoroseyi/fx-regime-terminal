@@ -1,0 +1,3078 @@
+{
+  "metrics": {
+    "total_return_pct": -3.63,
+    "alpha_vs_buyhold": -3.63,
+    "sharpe_ratio": -32.23,
+    "max_drawdown_pct": 4.16,
+    "win_rate_pct": 28.6,
+    "avg_trade_duration": 7.1,
+    "total_trades": 42,
+    "per_regime_trades": {
+      "Bull Trend": 16,
+      "Low Volatility Compression": 20,
+      "Mean Reversion Range": 6
+    },
+    "pair": "GBPUSD",
+    "strategy": "both",
+    "period_days": 365,
+    "regime_distribution": {
+      "Bull Trend": 2238,
+      "Bear Trend": 23,
+      "Noise": 1006,
+      "Low Volatility Compression": 1946,
+      "Mean Reversion Range": 582,
+      "Value Gap Formation": 105,
+      "High Volatility Expansion": 45
+    }
+  },
+  "trades": [
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3563368320465088,
+      "entry_time": "2025-06-13 18:00:00+00:00",
+      "exit_price": 1.3586586713790894,
+      "exit_time": "2025-06-16 06:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.17118456696905143,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 11
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3722879886627197,
+      "entry_time": "2025-06-27 21:00:00+00:00",
+      "exit_price": 1.3737207651138306,
+      "exit_time": "2025-06-30 06:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.10440785483425133,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 8
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3647032976150513,
+      "entry_time": "2025-07-03 00:00:00+00:00",
+      "exit_price": 1.366680383682251,
+      "exit_time": "2025-07-03 08:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.14487296034638833,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 8
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3545546531677246,
+      "entry_time": "2025-09-08 13:00:00+00:00",
+      "exit_price": 1.356704831123352,
+      "exit_time": "2025-09-09 01:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.15873689190754273,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 12
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3608219623565674,
+      "entry_time": "2025-09-15 10:00:00+00:00",
+      "exit_price": 1.3631035089492798,
+      "exit_time": "2025-09-16 06:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.16765944817361667,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 19
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.355380892753601,
+      "entry_time": "2025-09-18 20:00:00+00:00",
+      "exit_price": 1.3508949279785156,
+      "exit_time": "2025-09-19 06:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.33097447360141935,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 10
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3481448888778687,
+      "entry_time": "2025-10-01 11:00:00+00:00",
+      "exit_price": 1.3512600660324097,
+      "exit_time": "2025-10-01 12:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.23107139152780087,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 1
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3430570363998413,
+      "entry_time": "2025-10-07 18:00:00+00:00",
+      "exit_price": 1.3397821187973022,
+      "exit_time": "2025-10-08 01:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.24384054539617386,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 7
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.333653450012207,
+      "entry_time": "2025-10-12 23:00:00+00:00",
+      "exit_price": 1.3354523181915283,
+      "exit_time": "2025-10-13 01:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.13488272979047322,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3422818183898926,
+      "entry_time": "2025-10-16 15:00:00+00:00",
+      "exit_price": 1.3437789678573608,
+      "exit_time": "2025-10-16 17:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.1115376403789882,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.336023211479187,
+      "entry_time": "2025-10-22 17:00:00+00:00",
+      "exit_price": 1.3333688974380493,
+      "exit_time": "2025-10-23 03:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.19867274897110163,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 10
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3227863311767578,
+      "entry_time": "2025-10-29 16:00:00+00:00",
+      "exit_price": 1.316187858581543,
+      "exit_time": "2025-10-29 18:00:00+00:00",
+      "exit_reason": "regime_exit",
+      "pnl_pct": -0.49883132594398727,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.315408706665039,
+      "entry_time": "2025-10-31 21:00:00+00:00",
+      "exit_price": 1.312404751777649,
+      "exit_time": "2025-11-03 08:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.2283666568549691,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 9
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3236267566680908,
+      "entry_time": "2025-11-26 20:00:00+00:00",
+      "exit_price": 1.3267526626586914,
+      "exit_time": "2025-12-01 12:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.2361621941270888,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 63
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3348461389541626,
+      "entry_time": "2025-12-03 20:00:00+00:00",
+      "exit_price": 1.3370413780212402,
+      "exit_time": "2025-12-04 14:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.16445633717737557,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 18
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3348461389541626,
+      "entry_time": "2025-12-09 09:00:00+00:00",
+      "exit_price": 1.3320544958114624,
+      "exit_time": "2025-12-09 12:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.20913594917294492,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 3
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.340752124786377,
+      "entry_time": "2025-12-11 13:00:00+00:00",
+      "exit_price": 1.3435261249542236,
+      "exit_time": "2025-12-11 15:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.20689880825575147,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3410578966140747,
+      "entry_time": "2025-12-16 09:00:00+00:00",
+      "exit_price": 1.3425341844558716,
+      "exit_time": "2025-12-16 10:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.11008382602453116,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 1
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.343562364578247,
+      "entry_time": "2025-12-22 10:00:00+00:00",
+      "exit_price": 1.3450803756713867,
+      "exit_time": "2025-12-22 14:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.11298404399829717,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 4
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.3483449220657349,
+      "entry_time": "2025-12-26 07:00:00+00:00",
+      "exit_price": 1.3517167568206787,
+      "exit_time": "2025-12-26 13:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.2500721217370716,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 6
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.3477089405059814,
+      "entry_time": "2025-12-30 14:00:00+00:00",
+      "exit_price": 1.3462392091751099,
+      "exit_time": "2025-12-30 20:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.10905406105859836,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 6
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.3416695594787598,
+      "entry_time": "2026-01-05 03:00:00+00:00",
+      "exit_price": 1.3463118076324463,
+      "exit_time": "2026-01-05 10:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.3460053275331105,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 7
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.3466018438339233,
+      "entry_time": "2026-01-07 19:00:00+00:00",
+      "exit_price": 1.3447185754776,
+      "exit_time": "2026-01-08 07:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.13985339207329245,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 12
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3457139730453491,
+      "entry_time": "2026-01-12 08:00:00+00:00",
+      "exit_price": 1.347981333732605,
+      "exit_time": "2026-01-12 13:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.16848756367780182,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 5
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3398360013961792,
+      "entry_time": "2026-01-16 09:00:00+00:00",
+      "exit_price": 1.3408241271972656,
+      "exit_time": "2026-01-16 11:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.07374975743723462,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3477634191513062,
+      "entry_time": "2026-01-22 15:00:00+00:00",
+      "exit_price": 1.350311279296875,
+      "exit_time": "2026-01-22 21:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.18904357466336702,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 6
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3779228925704956,
+      "entry_time": "2026-01-27 18:00:00+00:00",
+      "exit_price": 1.3837765455245972,
+      "exit_time": "2026-01-27 20:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.4248171639838029,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.3657656908035278,
+      "entry_time": "2026-02-04 16:00:00+00:00",
+      "exit_price": 1.3651691675186157,
+      "exit_time": "2026-02-04 18:00:00+00:00",
+      "exit_reason": "regime_exit",
+      "pnl_pct": -0.04367683922131283,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.351278305053711,
+      "entry_time": "2026-02-18 18:00:00+00:00",
+      "exit_price": 1.3499467372894287,
+      "exit_time": "2026-02-18 20:00:00+00:00",
+      "exit_reason": "regime_exit",
+      "pnl_pct": -0.09854134113618432,
+      "regime_at_entry": "Low Volatility Compression",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3478542566299438,
+      "entry_time": "2026-02-27 20:00:00+00:00",
+      "exit_price": 1.3430570363998413,
+      "exit_time": "2026-03-02 00:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.35591535260622953,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 3
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.334810495376587,
+      "entry_time": "2026-03-05 22:00:00+00:00",
+      "exit_price": 1.3371665477752686,
+      "exit_time": "2026-03-06 03:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.17650838129025448,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 5
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3282134532928467,
+      "entry_time": "2026-03-19 03:00:00+00:00",
+      "exit_price": 1.330003023147583,
+      "exit_time": "2026-03-19 12:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.1347351098048064,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 9
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.329223394393921,
+      "entry_time": "2026-03-27 15:00:00+00:00",
+      "exit_price": 1.326784372329712,
+      "exit_time": "2026-03-27 17:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.1834922613080469,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.3200606107711792,
+      "entry_time": "2026-04-03 16:00:00+00:00",
+      "exit_price": 1.319468379020691,
+      "exit_time": "2026-04-03 20:00:00+00:00",
+      "exit_reason": "regime_exit",
+      "pnl_pct": -0.04486398167295512,
+      "regime_at_entry": "Mean Reversion Range",
+      "duration_candles": 4
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.339979648590088,
+      "entry_time": "2026-04-08 03:00:00+00:00",
+      "exit_price": 1.3432880640029907,
+      "exit_time": "2026-04-08 05:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.24690042243431914,
+      "regime_at_entry": "Mean Reversion Range",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3457754850387573,
+      "entry_time": "2026-04-10 12:00:00+00:00",
+      "exit_price": 1.3392904996871948,
+      "exit_time": "2026-04-12 23:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.4818772093605002,
+      "regime_at_entry": "Mean Reversion Range",
+      "duration_candles": 10
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "LONG",
+      "entry_price": 1.354312539100647,
+      "entry_time": "2026-04-16 10:00:00+00:00",
+      "exit_price": 1.3522669076919556,
+      "exit_time": "2026-04-16 14:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.1510457408930025,
+      "regime_at_entry": "Mean Reversion Range",
+      "duration_candles": 4
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3494075536727905,
+      "entry_time": "2026-04-24 11:00:00+00:00",
+      "exit_price": 1.3515431880950928,
+      "exit_time": "2026-04-24 15:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.15826459667351936,
+      "regime_at_entry": "Mean Reversion Range",
+      "duration_candles": 4
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "MeanReversion",
+      "direction": "SHORT",
+      "entry_price": 1.3527222871780396,
+      "entry_time": "2026-04-30 10:00:00+00:00",
+      "exit_price": 1.3587141036987305,
+      "exit_time": "2026-04-30 14:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.44294505808658274,
+      "regime_at_entry": "Mean Reversion Range",
+      "duration_candles": 4
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3608589172363281,
+      "entry_time": "2026-05-07 15:00:00+00:00",
+      "exit_price": 1.3582895994186401,
+      "exit_time": "2026-05-07 17:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.18880118909797303,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 2
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3617855310440063,
+      "entry_time": "2026-05-11 19:00:00+00:00",
+      "exit_price": 1.359397530555725,
+      "exit_time": "2026-05-12 00:00:00+00:00",
+      "exit_reason": "stop_loss",
+      "pnl_pct": -0.1753580452900319,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 5
+    },
+    {
+      "pair": "GBPUSD",
+      "strategy": "FVG",
+      "direction": "LONG",
+      "entry_price": 1.3389748334884644,
+      "entry_time": "2026-05-28 10:00:00+00:00",
+      "exit_price": 1.3407162427902222,
+      "exit_time": "2026-05-28 11:00:00+00:00",
+      "exit_reason": "take_profit",
+      "pnl_pct": 0.13005541689091166,
+      "regime_at_entry": "Bull Trend",
+      "duration_candles": 1
+    }
+  ],
+  "equity_curve": [
+    {
+      "datetime": "2026-04-29 23:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 00:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 01:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 02:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 03:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 04:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "High Volatility Expansion"
+    },
+    {
+      "datetime": "2026-04-30 05:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Noise"
+    },
+    {
+      "datetime": "2026-04-30 06:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "High Volatility Expansion"
+    },
+    {
+      "datetime": "2026-04-30 07:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 08:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 09:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 10:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 11:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 12:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 13:00:00+00:00",
+      "equity": 9702.428917725942,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 14:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "High Volatility Expansion"
+    },
+    {
+      "datetime": "2026-04-30 15:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Noise"
+    },
+    {
+      "datetime": "2026-04-30 16:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 17:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 18:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-04-30 19:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 20:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 21:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 22:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-04-30 23:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 00:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 01:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 02:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 03:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 04:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 05:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 06:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-01 07:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 08:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 09:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 10:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 11:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 12:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 13:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 14:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "High Volatility Expansion"
+    },
+    {
+      "datetime": "2026-05-01 15:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Noise"
+    },
+    {
+      "datetime": "2026-05-01 16:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 17:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 18:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 19:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 20:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-01 21:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-04 04:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-04 05:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "High Volatility Expansion"
+    },
+    {
+      "datetime": "2026-05-04 06:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-04 07:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Noise"
+    },
+    {
+      "datetime": "2026-05-04 08:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-04 09:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Mean Reversion Range"
+    },
+    {
+      "datetime": "2026-05-04 10:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "High Volatility Expansion"
+    },
+    {
+      "datetime": "2026-05-04 11:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Noise"
+    },
+    {
+      "datetime": "2026-05-04 12:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 13:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 14:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 15:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 16:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 17:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 18:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 19:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 20:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 21:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 22:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-04 23:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 00:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 01:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 02:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 03:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 04:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 05:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 06:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 07:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 08:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 09:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 10:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 11:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 12:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 13:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 14:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 15:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 16:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 17:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 18:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 19:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 20:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 21:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 22:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-05 23:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 00:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 01:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 02:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 03:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 04:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-06 05:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 06:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 07:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 08:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-06 09:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 10:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 11:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 12:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 13:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 14:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 15:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 16:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 17:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 18:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 19:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 20:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 21:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 22:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-06 23:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 00:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 01:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 02:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 03:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 04:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 05:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 06:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 07:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 08:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 09:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 10:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 11:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 12:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 13:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 14:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 15:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 16:00:00+00:00",
+      "equity": 9659.45248832051,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 17:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 18:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 19:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 20:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 21:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 22:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-07 23:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 00:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 01:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 02:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 03:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 04:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 05:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 06:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 07:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 08:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-08 09:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 10:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 11:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 12:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 13:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 14:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 15:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 16:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 17:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 18:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 19:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 20:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-08 21:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-10 23:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 00:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 01:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 02:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 03:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 04:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 05:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 06:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 07:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 08:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 09:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 10:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 11:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 12:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 13:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 14:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 15:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 16:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 17:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 18:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 19:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 20:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 21:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 22:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-11 23:00:00+00:00",
+      "equity": 9641.215327162206,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-12 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-13 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-14 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-14 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-15 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-17 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-18 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-19 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-20 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-20 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-21 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-21 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-22 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-24 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-25 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-25 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-25 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-26 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 11:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 12:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 13:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 14:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-27 15:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 16:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 17:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 18:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 19:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 20:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 21:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-27 22:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-27 23:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 00:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 01:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 02:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 03:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Low Volatility Compression"
+    },
+    {
+      "datetime": "2026-05-28 04:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 05:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 06:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 07:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 08:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 09:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 10:00:00+00:00",
+      "equity": 9624.308680422291,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 11:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 12:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 13:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 14:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 15:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 16:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 17:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 18:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 19:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 20:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 21:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 22:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-28 23:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-29 00:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-29 01:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-29 02:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    },
+    {
+      "datetime": "2026-05-29 03:00:00+00:00",
+      "equity": 9636.825615199483,
+      "regime": "Bull Trend"
+    }
+  ]
+}
